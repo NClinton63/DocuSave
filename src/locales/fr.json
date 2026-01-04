@@ -1,0 +1,90 @@
+{
+  "common": {
+    "appName": "DocuSafe",
+    "loading": "Chargement...",
+    "cancel": "Annuler",
+    "save": "Enregistrer",
+    "delete": "Supprimer",
+    "edit": "Modifier",
+    "search": "Rechercher des documents",
+    "goBack": "Retour",
+    "error": "Erreur",
+    "next": "Suivant",
+    "getStarted": "Commencer"
+  },
+  "onboarding": {
+    "title1": "Numérisez vos reçus facilement",
+    "title2": "Restez organisé hors ligne",
+    "title3": "Sécurisez vos dossiers",
+    "cta": "Commencer",
+    "skip": "Passer"
+  },
+  "home": {
+    "greeting": "Bon retour",
+    "title": "Mes Documents",
+    "emptyTitle": "Aucun document pour le moment",
+    "emptySubtitle": "Commencez par scanner votre premier reçu ou document",
+    "noResultsTitle": "Aucun document trouvé",
+    "noResultsSubtitle": "Essayez d'ajuster votre recherche ou vos filtres",
+    "scanFirstDocument": "Scanner le premier document"
+  },
+  "settings": {
+    "title": "Paramètres",
+    "language": "Langue",
+    "languageDescription": "Choisissez votre langue préférée",
+    "english": "Anglais",
+    "french": "Français",
+    "pin": "Sécurité",
+    "pinDescription": "Changer votre code PIN DocuSafe",
+    "changePin": "Modifier le PIN",
+    "changePinDescription": "Mettre à jour votre code de sécurité",
+    "biometricToggle": "Déverrouillage biométrique",
+    "biometricDescription": "Utilisez Face ID ou votre empreinte pour un accès rapide",
+    "autoLock": "Verrouillage automatique",
+    "autoLockDescription": "Verrouiller l'application après une période d'inactivité",
+    "autoLockOptions": {
+      "immediate": "Immédiatement",
+      "oneMinute": "Après 1 minute",
+      "fiveMinutes": "Après 5 minutes"
+    },
+    "clearData": "Tout effacer",
+    "clearDataDescription": "Supprimer tous les documents locaux et réinitialiser l'application",
+    "clearDataConfirmation": "Voulez-vous vraiment supprimer tous les documents et réinitialiser l'application ? Cette action est irréversible.",
+    "clearDataConfirmButton": "Oui, tout effacer",
+    "about": "À propos de DocuSafe",
+    "version": "Version de l'application"
+  },
+  "pin": {
+    "setupTitle": "Créer un code PIN sécurisé",
+    "currentPin": "PIN actuel",
+    "newPin": "Nouveau PIN",
+    "confirmNewPin": "Confirmez le nouveau PIN",
+    "confirmPin": "Confirmez votre PIN",
+    "pinLengthError": "Le PIN doit contenir entre 4 et 6 chiffres.",
+    "pinMismatchError": "Les PIN ne correspondent pas.",
+    "savePin": "Enregistrer le PIN",
+    "unlock": "Déverrouiller DocuSafe",
+    "placeholder": "Entrez votre PIN",
+    "unlockButton": "Déverrouiller",
+    "useBiometrics": "Utiliser la biométrie",
+    "invalidPin": "PIN incorrect. Réessayez.",
+    "currentPinInvalid": "Le PIN actuel est incorrect.",
+    "biometricsError": "Authentification biométrique indisponible",
+    "success": "PIN enregistré avec succès.",
+    "pinUpdated": "PIN mis à jour avec succès.",
+    "setupSubtitle": "Sécurisez vos documents financiers avec un code PIN",
+    "enterPin": "Entrer le PIN (4-6 chiffres)",
+    "hint": "Choisissez un code PIN de 4 à 6 chiffres facile à retenir"
+  },
+  "documentDetail": {
+    "details": "Détails",
+    "category": "Catégorie",
+    "vendor": "Fournisseur",
+    "notes": "Notes",
+    "created": "Créé le",
+    "deleteTitle": "Supprimer le document",
+    "deleteMessage": "Êtes-vous sûr de vouloir supprimer ce document ? Cette action est irréversible.",
+    "deleteError": "Échec de la suppression du document",
+    "notFound": "Document introuvable"
+  }
+}

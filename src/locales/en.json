@@ -1,0 +1,93 @@
+{
+  "common": {
+    "appName": "DocuSafe",
+    "loading": "Loading...",
+    "cancel": "Cancel",
+    "save": "Save",
+    "delete": "Delete",
+    "edit": "Edit",
+    "search": "Search documents",
+    "goBack": "Go Back",
+    "error": "Error",
+    "next": "Next",
+    "getStarted": "Get Started"
+  },
+  "onboarding": {
+    "title1": "Digitize receipts effortlessly",
+    "description1": "Snap photos of receipts, invoices, and contracts with auto-capture guidance.",
+    "title2": "Stay organized offline",
+    "description2": "DocuSafe stores your files locally so you can work anywhere in Cameroon.",
+    "title3": "Secure your business records",
+    "description3": "Protect sensitive data with PIN and biometric authentication.",
+    "cta": "Get Started",
+    "skip": "Skip"
+  },
+  "home": {
+    "greeting": "Welcome back",
+    "title": "My Documents",
+    "emptyTitle": "No documents yet",
+    "emptySubtitle": "Start by scanning your first receipt or document",
+    "noResultsTitle": "No documents found",
+    "noResultsSubtitle": "Try adjusting your search or filters",
+    "scanFirstDocument": "Scan First Document"
+  },
+  "settings": {
+    "title": "Settings",
+    "language": "Language",
+    "languageDescription": "Choose your preferred language",
+    "english": "English",
+    "french": "French",
+    "pin": "Security",
+    "pinDescription": "Change your DocuSafe PIN",
+    "changePin": "Change PIN",
+    "changePinDescription": "Update your security code",
+    "biometricToggle": "Biometric unlock",
+    "biometricDescription": "Use Face ID or fingerprint to unlock faster",
+    "autoLock": "Auto-lock timeout",
+    "autoLockDescription": "Automatically lock the app after inactivity",
+    "autoLockOptions": {
+      "immediate": "Immediately",
+      "oneMinute": "After 1 minute",
+      "fiveMinutes": "After 5 minutes"
+    },
+    "clearData": "Clear all data",
+    "clearDataDescription": "Remove all local documents and reset the app",
+    "clearDataConfirmation": "Are you sure you want to delete all documents and reset the app? This cannot be undone.",
+    "clearDataConfirmButton": "Yes, clear everything",
+    "about": "About DocuSafe",
+    "version": "App version"
+  },
+  "pin": {
+    "setupTitle": "Create a secure PIN",
+    "currentPin": "Current PIN",
+    "newPin": "New PIN",
+    "confirmNewPin": "Confirm new PIN",
+    "pinLengthError": "PIN must be 4-6 digits.",
+    "pinMismatchError": "PINs do not match.",
+    "savePin": "Save PIN",
+    "unlock": "Unlock DocuSafe",
+    "placeholder": "Enter your PIN",
+    "unlockButton": "Unlock",
+    "useBiometrics": "Use biometrics",
+    "invalidPin": "Incorrect PIN. Try again.",
+    "currentPinInvalid": "Current PIN is incorrect.",
+    "biometricsError": "Biometric authentication unavailable",
+    "success": "PIN saved successfully.",
+    "pinUpdated": "PIN updated successfully.",
+    "setupSubtitle": "Secure your financial documents with a PIN",
+    "enterPin": "Enter PIN (4-6 digits)",
+    "confirmPin": "Confirm PIN",
+    "hint": "Choose a 4-6 digit PIN that you can remember"
+  },
+  "documentDetail": {
+    "details": "Details",
+    "category": "Category",
+    "vendor": "Vendor",
+    "notes": "Notes",
+    "created": "Created",
+    "deleteTitle": "Delete Document",
+    "deleteMessage": "Are you sure you want to delete this document? This action cannot be undone.",
+    "deleteError": "Failed to delete document",
+    "notFound": "Document not found"
+  }
+}

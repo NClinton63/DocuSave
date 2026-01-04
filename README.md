@@ -1,97 +1,78 @@
-This is a new [**React Native**](https://reactnative.dev) project, bootstrapped using [`@react-native-community/cli`](https://github.com/react-native-community/cli).
+# DocuSafe
 
-# Getting Started
+DocuSafe is a secure, offline-friendly document management app built with Expo/React Native. It lets micro and small businesses quickly capture receipts, invoices, and vital records, then protect them with PIN and biometric authentication.
 
-> **Note**: Make sure you have completed the [Set Up Your Environment](https://reactnative.dev/docs/set-up-your-environment) guide before proceeding.
+## Features
 
-## Step 1: Start Metro
+- **Multi-stage onboarding** with localized copy (English & French)
+- **PIN + biometric authentication** powered by SecureStore and Local Authentication
+- **Auto-lock settings** configurable from the Settings screen
+- **Offline-first document storage** using Expo SQLite and FileSystem
+- **Scan workflow** with camera capture, basic validators, thumbnails, and searchable metadata
+- **Localization** via `i18next`/`react-i18next`
+- **State management** handled by Zustand stores for app, settings, and documents
 
-First, you will need to run **Metro**, the JavaScript build tool for React Native.
+## Project Structure
 
-To start the Metro dev server, run the following command from the root of your React Native project:
-
-```sh
-# Using npm
-npm start
-
-# OR using Yarn
-yarn start
+```
+├── App.tsx
+├── src/
+│   ├── components/       # Reusable UI elements (Button, Fab, SettingRow, etc.)
+│   ├── constants/        # Colors, sizes, categories
+│   ├── hooks/            # Auth, documents, settings, auto-lock hooks
+│   ├── locales/          # `en` and `fr` translation files
+│   ├── navigation/       # App navigator + types
+│   ├── screens/          # Onboarding, PIN, Home, Scan, Detail, Settings
+│   ├── services/         # SQLite + FileSystem helpers
+│   ├── store/            # Zustand stores
+│   └── utils/            # Validators and helpers
+└── package.json          # Dependencies and scripts
 ```
 
-## Step 2: Build and run your app
+## Getting Started
 
-With Metro running, open a new terminal window/pane from the root of your React Native project, and use one of the following commands to build and run your Android or iOS app:
+1. **Install dependencies**
+   ```bash
+   npm install
+   ```
+2. **Start the Expo dev server**
+   ```bash
+   npm run start
+   # or npm run ios / npm run android
+   ```
+3. **Run tests**
+   ```bash
+   npm test
+   ```
 
-### Android
+> ⚠️ Note: Expo SDK 54 targets React Native 0.81. Matching dependency versions (especially Expo modules, `@types/react-native`, and lint packages) is important. If `npm install` fails with `ETARGET`, adjust the offending package to the latest published version.
 
-```sh
-# Using npm
-npm run android
+## Scripts
 
-# OR using Yarn
-yarn android
-```
+| Script        | Description                      |
+| ------------- | -------------------------------- |
+| `npm run start`   | Launch Expo dev server           |
+| `npm run ios`     | Start iOS simulator via Expo    |
+| `npm run android` | Start Android emulator          |
+| `npm run web`     | Run Expo web build              |
+| `npm run lint`    | Lint the project with ESLint    |
+| `npm run typecheck` | Run TypeScript type checking |
 
-### iOS
+## Testing & Accessibility
 
-For iOS, remember to install CocoaPods dependencies (this only needs to be run on first clone or after updating native deps).
+- Jest/testing-library scaffolding lives under `src/__tests__`.
+- Accessibility labels and hints should be added to interactive components (Buttons, Setting rows, FAB) as the UI evolves.
 
-The first time you create a new project, run the Ruby bundler to install CocoaPods itself:
+## Splash Screen
 
-```sh
-bundle install
-```
+`splash.image` in `app.json` points to `./docusafe_splash.png`. Update that asset to refresh the native splash experience.
 
-Then, and every time you update your native dependencies, run:
+## Contributing
 
-```sh
-bundle exec pod install
-```
+1. Create a feature branch
+2. Implement changes with TypeScript strict mode
+3. Keep translations in sync across `src/locales/en.json` and `fr.json`
+4. Run `npm run lint && npm run typecheck`
+5. Submit a pull request with screenshots/GIFs when applicable
 
-For more information, please visit [CocoaPods Getting Started guide](https://guides.cocoapods.org/using/getting-started.html).
-
-```sh
-# Using npm
-npm run ios
-
-# OR using Yarn
-yarn ios
-```
-
-If everything is set up correctly, you should see your new app running in the Android Emulator, iOS Simulator, or your connected device.
-
-This is one way to run your app — you can also build it directly from Android Studio or Xcode.
-
-## Step 3: Modify your app
-
-Now that you have successfully run the app, let's make changes!
-
-Open `App.tsx` in your text editor of choice and make some changes. When you save, your app will automatically update and reflect these changes — this is powered by [Fast Refresh](https://reactnative.dev/docs/fast-refresh).
-
-When you want to forcefully reload, for example to reset the state of your app, you can perform a full reload:
-
-- **Android**: Press the <kbd>R</kbd> key twice or select **"Reload"** from the **Dev Menu**, accessed via <kbd>Ctrl</kbd> + <kbd>M</kbd> (Windows/Linux) or <kbd>Cmd ⌘</kbd> + <kbd>M</kbd> (macOS).
-- **iOS**: Press <kbd>R</kbd> in iOS Simulator.
-
-## Congratulations! :tada:
-
-You've successfully run and modified your React Native App. :partying_face:
-
-### Now what?
-
-- If you want to add this new React Native code to an existing application, check out the [Integration guide](https://reactnative.dev/docs/integration-with-existing-apps).
-- If you're curious to learn more about React Native, check out the [docs](https://reactnative.dev/docs/getting-started).
-
-# Troubleshooting
-
-If you're having issues getting the above steps to work, see the [Troubleshooting](https://reactnative.dev/docs/troubleshooting) page.
-
-# Learn More
-
-To learn more about React Native, take a look at the following resources:
-
-- [React Native Website](https://reactnative.dev) - learn more about React Native.
-- [Getting Started](https://reactnative.dev/docs/environment-setup) - an **overview** of React Native and how setup your environment.
-- [Learn the Basics](https://reactnative.dev/docs/getting-started) - a **guided tour** of the React Native **basics**.
-- [Blog](https://reactnative.dev/blog) - read the latest official React Native **Blog** posts.
-- [`@facebook/react-native`](https://github.com/facebook/react-native) - the Open Source; GitHub **repository** for React Native.
+Happy shipping! ✨
